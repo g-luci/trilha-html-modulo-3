@@ -1,12 +1,24 @@
+ @font-face {
+    font-family: 'Trajan Pro Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Trajan Pro Bold'), url('Font/TrajanPro-Bold.woff') format('woff');
+}
+
 body, html {
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: black;
 }
+.background-image-wiki{
+    background-image: url(https://static.wixstatic.com/media/ebe171_dafda45cb5284235b6306dc5fc5efe05~mv2.png/v1/fill/w_980,h_1490,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/ebe171_dafda45cb5284235b6306dc5fc5efe05~mv2.png);
+}
+
 ul { list-style: none; padding-left: 5px; }
 a { color:blue; text-decoration: none;}
 .bar {
-    background-color: #f9f9fb;
+    background-color: rgb(0,0,0);
     padding:15px;
     border-top: solid 1px #cdcdcd;
     border-bottom: solid 1px #cdcdcd;
@@ -29,10 +41,45 @@ a { color:blue; text-decoration: none;}
 .anchors {
     border-left: solid 1px #cdcdcd;
     padding-left: 15px;
+    min-width: 0;
+    margin-right: 20%;
 }
 .sidebar {
     border-right: solid 1px #cdcdcd;
 }
-figure {
+.aligned-image {
     text-align: center;
 }
+.footer-section{
+    text-align:center;
+    margin-top: 36px;
+    color: #cdcdcd;
+}
+h1, h2, h3{
+    font-family:'Trajan Pro Bold';
+    margin-bottom: 0.5%;
+    color:#fcd88a;
+}
+article{
+    color:#cdcdcd;
+    margin: 0;
+}
+a{
+    outline: none;
+    color: #cdcdcd;
+}
+video{
+    width: 100%;
+    border-radius: 10%;
+}
+
+ul {
+  list-style-type: disc;      
+  list-style-position: outside;
+  padding-left: 20px;         
+  color: #fcd88a;
+}
+li {
+    margin-bottom: 3px;
+}
+
